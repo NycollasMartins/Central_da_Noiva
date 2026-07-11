@@ -125,7 +125,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 @media (min-width:820px){
   .hero-grid{
     max-width:980px; display:grid; grid-template-columns:1.02fr .98fr;
-    gap:46px; align-items:center; text-align:left;
+    gap:46px; align-items:start; text-align:left;
   }
   .hero-grid .ornament{margin-left:0; margin-right:auto}
   .hero-grid .trust{justify-content:flex-start}

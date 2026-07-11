@@ -70,7 +70,7 @@
     '<span class="sp-icon">' + heartSVG + '</span>' +
     '<div class="sp-body">' +
       '<p class="sp-name"><span class="sp-nm"></span>' +
-        '<span class="sp-verified" aria-label="compra verificada">' + checkSVG + '</span></p>' +
+        '<span class="sp-verified" role="img" aria-label="compra verificada">' + checkSVG + '</span></p>' +
       '<p class="sp-text">acabou de comprar a <b>Central da Noiva</b></p>' +
     '</div>' +
     '<button class="sp-close" type="button" aria-label="Fechar aviso">&times;</button>';
