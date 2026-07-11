@@ -125,6 +125,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
   width:var(--screen-width); height:var(--screen-height);
   object-fit:cover; border-radius:2px;
 }
+/* wrappers <picture> (WebP com fallback) — não alteram o layout */
+.hero-mac picture{display:block}
+.testi-card picture{display:block; width:100%; height:100%}
+.founder picture{display:block; width:120px; margin:0 auto 18px}
+.founder picture img{margin:0; display:block}
 
 /* ---------- Hero em duas colunas (texto + MacBook) ---------- */
 @media (min-width:820px){

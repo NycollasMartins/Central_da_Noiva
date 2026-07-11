@@ -28,6 +28,7 @@
 ==================================================================
 -->
 
+<link rel="preload" href="imagens/macbook.webp" as="image" type="image/webp" fetchpriority="high">
 <link rel="preload" href="fonts/cormorantgaramond.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/jost.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
@@ -76,8 +77,14 @@ src="https://www.facebook.com/tr?id=1625121772510561&ev=PageView&noscript=1"
 
     <div class="hero-visual">
       <div class="hero-mac">
-        <img class="hero-mac-frame" src="imagens/macbook.png" alt="" width="1300" height="754" decoding="async" fetchpriority="high">
-        <img class="hero-mac-screen" src="imagens/planner-casamento.jpg" alt="Central da Noiva aberta no Notion em um MacBook" width="950" height="565" decoding="async">
+        <picture>
+          <source srcset="imagens/macbook.webp" type="image/webp">
+          <img class="hero-mac-frame" src="imagens/macbook.png" alt="" width="900" height="522" decoding="async" fetchpriority="high">
+        </picture>
+        <picture>
+          <source srcset="imagens/planner-casamento.webp" type="image/webp">
+          <img class="hero-mac-screen" src="imagens/planner-casamento.jpg" alt="Central da Noiva aberta no Notion em um MacBook" width="950" height="565" decoding="async">
+        </picture>
       </div>
     </div>
   </div>
@@ -129,11 +136,11 @@ src="https://www.facebook.com/tr?id=1625121772510561&ev=PageView&noscript=1"
   <!-- Carrossel: troque os src pelas imagens/prints reais dos depoimentos -->
   <div class="testi">
     <div class="testi-track" id="testiTrack">
-      <figure class="testi-card"><img src="imagens/print_01.jpeg" alt="Print do depoimento de uma noiva" width="720" height="1212" loading="lazy" decoding="async"></figure>
-      <figure class="testi-card"><img src="imagens/print_02.jpeg" alt="Print do depoimento de uma noiva" width="720" height="622" loading="lazy" decoding="async"></figure>
-      <figure class="testi-card"><img src="imagens/print_03.jpeg" alt="Print do depoimento de uma noiva" width="720" height="415" loading="lazy" decoding="async"></figure>
-      <figure class="testi-card"><img src="imagens/print_04.jpeg" alt="Print do depoimento de uma noiva" width="720" height="392" loading="lazy" decoding="async"></figure>
-      <figure class="testi-card"><img src="imagens/print_05.jpeg" alt="Print do depoimento de uma noiva" width="720" height="507" loading="lazy" decoding="async"></figure>
+      <figure class="testi-card"><picture><source srcset="imagens/print_01.webp" type="image/webp"><img src="imagens/print_01.jpeg" alt="Print do depoimento de uma noiva" width="720" height="1212" loading="lazy" decoding="async"></picture></figure>
+      <figure class="testi-card"><picture><source srcset="imagens/print_02.webp" type="image/webp"><img src="imagens/print_02.jpeg" alt="Print do depoimento de uma noiva" width="720" height="622" loading="lazy" decoding="async"></picture></figure>
+      <figure class="testi-card"><picture><source srcset="imagens/print_03.webp" type="image/webp"><img src="imagens/print_03.jpeg" alt="Print do depoimento de uma noiva" width="720" height="415" loading="lazy" decoding="async"></picture></figure>
+      <figure class="testi-card"><picture><source srcset="imagens/print_04.webp" type="image/webp"><img src="imagens/print_04.jpeg" alt="Print do depoimento de uma noiva" width="720" height="392" loading="lazy" decoding="async"></picture></figure>
+      <figure class="testi-card"><picture><source srcset="imagens/print_05.webp" type="image/webp"><img src="imagens/print_05.jpeg" alt="Print do depoimento de uma noiva" width="720" height="507" loading="lazy" decoding="async"></picture></figure>
     </div>
   </div>
 
@@ -352,7 +359,7 @@ FIM BÔNUS DESATIVADO ============ -->
 <section style="background:var(--paper)">
   <div class="wrap">
     <div class="founder center">
-      <img src="imagens/img_Ana_Julia.JPG" alt="Foto de Ana Júlia, criadora da Central da Noiva" width="520" height="781" loading="lazy" decoding="async">
+      <picture><source srcset="imagens/img_Ana_Julia.webp" type="image/webp"><img src="imagens/img_Ana_Julia.JPG" alt="Foto de Ana Júlia, criadora da Central da Noiva" width="520" height="781" loading="lazy" decoding="async"></picture>
       <p class="eyebrow">Quem faz isso por você</p>
       <p>Oiii, eu sou a Ana Júlia… essa noivinha da foto. 😊</p>
       <p>Quando comecei a organizar o meu casamento, levei um susto com os orçamentos. Confesso que pensei em desistir de algumas ideias — não porque eu não queria aquele casamento, mas porque os orçamentos faziam parecer que ele era impossível.</p>
