@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Central da Noiva — Seu casamento com menos de R$ 7 mil</title>
+<meta name="description" content="A Central da Noiva é um painel completo no Notion que organiza orçamento, fornecedores, cronograma e checklist em um só lugar — para você casar gastando menos de R$ 7 mil.">
+
+<!--
+==================================================================
+  COMO EDITAR ESTA PÁGINA (leia antes de publicar):
+  1) Troque tudo que estiver entre {{ }} pelos seus dados reais.
+  2) Link de checkout da Kiwify: procure por  href="{{LINK_KIWIFY}}"
+     (aparece em todos os botões) e cole o seu link.
+  3) Cores da sua marca: edite as variáveis em :root  no style.css
+  4) Imagens: troque os src="..." que apontam pra placeholder.
+  5) DEPOIMENTOS: a seção de depoimentos está com textos de exemplo
+     entre {{ }} — troque pelos depoimentos reais das noivas.
+  6) BÔNUS: a seção de bônus está COMENTADA (oculta). Para reativar,
+     remova as marcas de comentário indicadas em "SEÇÃO 05".
+
+  ARQUIVOS DO PROJETO:
+    index.html   -> esta página (conteúdo)
+    style.css    -> todo o visual e as cores da marca
+    script.js    -> contador regressivo + carrossel + popup
+    politica.html-> política de privacidade e termos
+  Mantenha os arquivos na MESMA pasta.
+==================================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ BARRA FIXA ============ -->
+<div class="topbar">
+  <b>OFERTA DE LANÇAMENTO</b> — termina em <span id="count">23:59:59</span>
+</div>
+
+<!-- ============ SEÇÃO 01 — HERO ============ -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="badge">Central da Noiva · Painel no Notion</div>
+      <h1>Seu casamento com menos de R$ 7 mil</h1>
+      <p class="lead">Com uma central inteligente que organiza orçamento, fornecedores, cronograma e checklist em um só lugar, para que você chegue ao grande dia com a tranquilidade de saber que não esqueceu nada — sem estourar o orçamento e sem abrir mão do casamento que sempre sonhou.</p>
+
+      <div class="ornament"><span>♥</span></div>
+
+      <div class="trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Acesso vitalício</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Funciona no celular e no PC</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 7 dias de garantia</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-mac">
+        <img class="hero-mac-frame" src="imagens/macbook.png" alt="">
+        <img class="hero-mac-screen" src="imagens/planner-casamento.png" alt="Central da Noiva aberta no Notion em um MacBook">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ SEÇÃO 02 — DOR / PERGUNTAS ============ -->
+<section class="questions">
+  <div class="wrap center">
+    <p class="eyebrow">Se você se identifica</p>
+    <h2>Chega de se sentir perdida com tantos orçamentos, fornecedores e decisões</h2>
+    <ul class="qlist">
+      <li>Como organizar todas as etapas do casamento sem precisar contratar uma assessoria?</li>
+      <li>O que fazer mês a mês para não esquecer nenhum detalhe até o grande dia?</li>
+      <li>Onde economizar sem comprometer o resultado?</li>
+    </ul>
+    <p class="lead" style="margin-top:28px">Essas provavelmente são as mesmas dúvidas que passam pela sua cabeça agora. E a verdade é que respondê-las da maneira certa pode representar <strong style="color:#fff">milhares de reais economizados</strong> até o dia do seu casamento.</p>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 02 — NARRATIVA / BENEFÍCIOS ============ -->
+<section>
+  <div class="wrap">
+    <p class="lead">Agora imagine poder planejar um casamento completo por menos de R$ 7 mil, sem abrir mão daquilo que realmente importa.</p>
+    <p>Sem abrir mão do vestido que você sempre sonhou. Sem precisar cortar a fotografia, a decoração ou um cardápio especial para os seus convidados.</p>
+    <p><strong>A diferença está em ter um planejamento inteligente.</strong></p>
+    <p>Foi exatamente por isso que criamos a Central da Noiva, um painel completo no Notion que reúne orçamento, cronograma, checklist, fornecedores e todas as etapas da organização em um único lugar. Porque um casamento econômico não acontece por sorte.</p>
+    <p>Imagine chegar na semana do seu casamento sem aquela sensação de que esqueceu algum fornecedor, alguma parcela ou algum detalhe importante. Em vez disso, imagine abrir sua Central da Noiva e ver absolutamente tudo organizado — cada tarefa concluída e cada pagamento sob controle.</p>
+
+    <div class="checklist">
+      <p class="checklist-title">Com a Central da Noiva você consegue:</p>
+      <ul>
+        <li>Organizar todo o casamento do zero, mesmo sem experiência.</li>
+        <li>Controlar seu orçamento e acompanhar cada gasto em tempo real.</li>
+        <li>Planejar cada etapa sem esquecer nenhum detalhe.</li>
+        <li>Economizar milhares de reais sem abrir mão do casamento que sempre imaginou.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 03 — DEPOIMENTOS ============ -->
+<section>
+  <div class="wrap center">
+    <p class="eyebrow">Quem já usa</p>
+    <h2>Noivas que organizaram tudo com a Central</h2>
+    <div class="ornament"><span>♥</span></div>
+  </div>
+
+  <!-- Carrossel: troque os src pelas imagens/prints reais dos depoimentos -->
+  <div class="testi">
+    <div class="testi-track" id="testiTrack">
+      <figure class="testi-card"><img src="imagens/print_01.jpeg" alt="Print do depoimento de uma noiva"></figure>
+      <figure class="testi-card"><img src="imagens/print_02.jpeg" alt="Print do depoimento de uma noiva"></figure>
+      <figure class="testi-card"><img src="imagens/print_03.jpeg" alt="Print do depoimento de uma noiva"></figure>
+      <figure class="testi-card"><img src="imagens/print_04.jpeg" alt="Print do depoimento de uma noiva"></figure>
+      <figure class="testi-card"><img src="imagens/print_05.jpeg" alt="Print do depoimento de uma noiva"></figure>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <p class="lead" style="margin-top:8px">Esse é exatamente o mesmo sistema que utilizamos para planejar casamentos completos gastando menos de R$ 7 mil.</p>
+    <p>Em vez de reunir dezenas de planilhas, anotações, listas e aplicativos diferentes, você terá tudo concentrado em um único painel inteligente — mesmo que seja o seu primeiro contato com a organização de um casamento.</p>
+    <p>Porque o objetivo nunca foi transformar você em uma organizadora de eventos. O objetivo sempre foi fazer você aproveitar essa fase como noiva, enquanto a Central mostra exatamente o próximo passo.</p>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 04 — O QUE TEM DENTRO (MÓDULOS) ============ -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">O que você recebe</p>
+      <h2>Conheça tudo o que você terá acesso na sua Central</h2>
+      <div class="ornament"><span>♥</span></div>
+    </div>
+
+    <div class="feature">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+      <div><h3>OrçaFácil</h3><p>Acompanhe todos os gastos em tempo real e saiba exatamente quanto ainda pode investir sem ultrapassar seu limite.</p></div>
+    </div>
+    <div class="feature">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 15l2 2 4-4"/></svg></div>
+      <div><h3>NoivaCheck</h3><p>Chega de dúvidas e ansiedade. O checklist mostra todas as tarefas organizadas até o dia do casamento.</p></div>
+    </div>
+    <div class="feature">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-9M14 17H5M17 3a2 2 0 0 1 0 4M7 21a2 2 0 0 1 0-4"/></svg></div>
+      <div><h3>Parceiros da Noiva</h3><p>Compare orçamentos, acompanhe pagamentos e mantenha tudo organizado sem depender de conversas perdidas no WhatsApp.</p></div>
+    </div>
+    <div class="feature">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div><h3>MesaCerta</h3><p>Controle confirmações, mesas e acompanhantes de forma simples e prática, sem aquela velha bagunça.</p></div>
+    </div>
+    <div class="feature">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+      <div><h3>Agenda da Noiva</h3><p>Mesmo que você esteja começando agora ou tenha poucos meses para organizar tudo, saiba exatamente qual é o próximo passo.</p></div>
+    </div>
+
+    <div class="checklist">
+      <p class="checklist-title">E além disso, imagine abrir o celular e encontrar isso…</p>
+      <ul>
+        <li>Saber exatamente qual é o próximo passo.</li>
+        <li>Nunca esquecer um prazo importante.</li>
+        <li>Ter todas as informações organizadas em um único lugar.</li>
+        <li>Planejar seu casamento com mais segurança.</li>
+        <li>Aproveitar o noivado sem a sensação de estar esquecendo alguma coisa.</li>
+        <li>Tudo organizado em menos de 10 segundos.</li>
+      </ul>
+    </div>
+
+    <p class="lead" style="margin-top:22px">E o melhor: enquanto outras noivas passam meses tentando organizar tudo em grupos de WhatsApp, cadernos, planilhas e dezenas de aplicativos diferentes… você terá absolutamente tudo concentrado em um único lugar.</p>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 05 — BÔNUS (DESATIVADO) ============
+     Seção temporariamente desativada. Para reativar, remova esta
+     linha de abertura de comentário e a linha "FIM BÔNUS DESATIVADO"
+     logo após o </section>.
+<section style="background:var(--paper)">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">Leve também</p>
+      <h2>Bônus exclusivos dessa oferta</h2>
+      <div class="ornament"><span>♥</span></div>
+    </div>
+    <p class="cta-note">Comprando nos dias 8, 9 e 10 de julho você ganha bônus extras.</p>
+
+    <div class="bonus">
+      <span class="tag">Bônus #1</span>
+      <h3>Guia Completo do Enxoval</h3>
+      <p>Saiba exatamente o que comprar, o que realmente vale a pena investir e evite gastar dinheiro com itens desnecessários.</p>
+    </div>
+    <div class="bonus">
+      <span class="tag">Bônus #2</span>
+      <h3>Casamento Civil Sem Complicação</h3>
+      <p>Descubra toda a documentação necessária, custos, prazos e o passo a passo para organizar seu casamento civil sem dores de cabeça.</p>
+    </div>
+    <div class="bonus">
+      <span class="tag">Bônus #3</span>
+      <h3>Paleta de Cores Inteligente</h3>
+      <p>Escolha combinações harmoniosas para decoração, vestidos e identidade visual em poucos minutos, mesmo sem experiência.</p>
+    </div>
+    <div class="bonus">
+      <span class="tag">Bônus #4</span>
+      <h3>Data Inteligente</h3>
+      <p>Descubra quais meses, dias da semana e horários costumam gerar uma economia enorme na contratação de fornecedores.</p>
+    </div>
+    <div class="bonus">
+      <span class="tag">Bônus #5</span>
+      <h3>Guia de Economia com Fornecedores</h3>
+      <p>Aprenda as melhores estratégias de negociação e descubra onde realmente vale a pena economizar sem comprometer a qualidade do seu casamento.</p>
+    </div>
+  </div>
+</section>
+FIM BÔNUS DESATIVADO ============ -->
+
+<!-- ============ SEÇÃO 06 — PREÇO ============ -->
+<section id="oferta">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">Garanta o seu acesso</p>
+      <h2>A melhor oferta pra você</h2>
+      <div class="ornament"><span>♥</span></div>
+    </div>
+
+    <div class="plans">
+      <div class="plan hot">
+        <span class="ribbon">★ Oferta de lançamento</span>
+        <h3>Central da Noiva</h3>
+        <div class="price">
+          <span class="old">De <span class="strike">R$ 97,00</span> por</span>
+          <span class="big">R$ 47,00</span>
+          <span class="par">ou parcelado na Kiwify</span>
+          <span class="today">Somente hoje por esse preço</span>
+        </div>
+        <ul>
+          <li>Central da Noiva completa no Notion</li>
+          <li>OrçaFácil — controle de orçamento</li>
+          <li>NoivaCheck — checklist cronológico</li>
+          <li>Parceiros da Noiva — fornecedores e contratos</li>
+          <li>MesaCerta — convidados e mesas</li>
+          <li>Agenda da Noiva — próximos passos</li>
+          <li>Acesso vitalício + atualizações grátis</li>
+          <li>7 dias de garantia</li>
+        </ul>
+        <a class="btn" href="{{LINK_KIWIFY}}">QUERO MINHA CENTRAL DA NOIVA<small>52% de desconto só hoje</small></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GARANTIA ============ -->
+<section>
+  <div class="wrap">
+    <div class="guarantee">
+      <div class="seal"><div><b>7</b><br><span>dias</span></div></div>
+      <h2>Risco zero pra você</h2>
+      <p>Compra 100% segura pela Kiwify. Se em até 7 dias você achar que a Central da Noiva não é pra você, é só pedir o reembolso — devolvemos cada centavo, sem perguntas e sem burocracia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 07 — RESUMO / OBJEÇÕES ============ -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">Ainda está em dúvida?</p>
+      <h2>Então deixa eu resumir</h2>
+      <div class="ornament"><span>♥</span></div>
+    </div>
+
+    <p class="lead center">Se o seu objetivo é realizar um casamento lindo gastando menos de R$ 7 mil, sem viver meses de estresse e insegurança, a Central da Noiva foi criada exatamente para isso. Ela reúne em um único lugar tudo aquilo que normalmente deixa qualquer noiva ansiosa.</p>
+
+    <div class="chips">
+      <span class="chip">📅 Checklist completo</span>
+      <span class="chip">💰 Controle financeiro</span>
+      <span class="chip">🤍 Gestão de fornecedores</span>
+      <span class="chip">👥 Lista de convidados</span>
+      <span class="chip">🎁 Lista de presentes</span>
+      <span class="chip">📄 Contratos e documentos</span>
+      <span class="chip">🏠 Planejamento da casa nova</span>
+      <span class="chip">🩺 Saúde dos noivos</span>
+      <span class="chip">👗 Padrinhos</span>
+      <span class="chip">🎉 Chá de panela</span>
+      <span class="chip">📷 Pré-wedding</span>
+    </div>
+    <p class="center"><strong>Tudo finalmente organizado.</strong></p>
+
+    <p>A proposta é simples: trocar a ansiedade de organizar tudo sozinha — até porque você merece lembrar dessa fase pelos momentos felizes, e não pelo medo de esquecer alguma coisa — por um sistema que te guia em cada passo até o grande dia.</p>
+    <p>E o melhor… hoje você garante acesso com <strong>52% de desconto</strong> e ainda conta com 7 dias de garantia para testar sem riscos. Pagamento único. Sem mensalidades. Sem cobranças recorrentes.</p>
+
+    <div class="cta-block" style="margin-top:24px">
+      <a class="btn" href="{{LINK_KIWIFY}}">QUERO MINHA CENTRAL DA NOIVA</a>
+    </div>
+
+    <div class="objection">
+      <h3>Mas… se essa Central é tão completa, por que ela custa tão pouco?</h3>
+      <p>Essa é uma pergunta que recebemos com frequência. E a resposta é simples: nosso objetivo é fazer com que o investimento nunca seja um obstáculo para nenhuma noiva.</p>
+      <p>Afinal, se a missão da Central é ajudar você a economizar durante a organização do casamento, ela também precisa ser acessível. Além disso, preferimos que milhares de noivas tenham acesso à ferramenta, compartilhem suas experiências e indiquem para outras pessoas, em vez de cobrar um valor alto e limitar esse benefício.</p>
+      <p>Por isso, hoje você faz um pagamento único, sem mensalidades, sem taxas escondidas e sem qualquer surpresa. Se dentro de 7 dias você perceber que a Central não faz sentido para o seu planejamento, basta solicitar o reembolso e devolveremos 100% do seu investimento.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 08 — FAQ ============ -->
+<section class="faq">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">Ainda com dúvida?</p>
+      <h2>Perguntas frequentes</h2>
+      <div class="ornament"><span>♥</span></div>
+    </div>
+
+    <details open>
+      <summary>Quando vou receber acesso à minha Central da Noiva?</summary>
+      <p>Assim que seu pagamento for aprovado, você recebe um e-mail com todas as instruções de acesso — em poucos minutos, mesmo que nunca tenha usado o Notion. Tudo foi pensado para ser simples e intuitivo, para você começar a organizar cada detalhe do seu casamento pelo celular ou computador.</p>
+    </details>
+    <details>
+      <summary>Preciso pagar o Notion para usar?</summary>
+      <p>Não. A Central funciona 100% na versão gratuita do Notion, no celular ou no computador.</p>
+    </details>
+    <details>
+      <summary>O pagamento é único?</summary>
+      <p>Sim! Você paga apenas uma vez. Sem mensalidades, sem assinaturas e sem cobranças recorrentes. A Central será sua para usar durante todo o planejamento do casamento.</p>
+    </details>
+    <details>
+      <summary>E se eu não gostar?</summary>
+      <p>Você tem 7 dias de garantia incondicional. Se por qualquer motivo perceber que a Central da Noiva não faz sentido para você, basta solicitar o reembolso dentro desse prazo e devolveremos 100% do seu investimento. Sem burocracia, sem perguntas desnecessárias e sem riscos.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 09 — FUNDADORA ============ -->
+<section style="background:var(--paper)">
+  <div class="wrap">
+    <div class="founder center">
+      <img src="imagens/img_Ana_Julia.JPG" alt="Foto de Ana Júlia, criadora da Central da Noiva">
+      <p class="eyebrow">Quem faz isso por você</p>
+      <p>Oiii, eu sou a Ana Júlia… essa noivinha da foto. 😊</p>
+      <p>Quando comecei a organizar o meu casamento, levei um susto com os orçamentos. Confesso que pensei em desistir de algumas ideias — não porque eu não queria aquele casamento, mas porque os orçamentos faziam parecer que ele era impossível.</p>
+      <p>E foi nesse momento que eu percebi uma coisa: não era o meu sonho que era caro, era a falta de planejamento.</p>
+      <p>Depois de muito planejamento, pesquisa e organização, consegui realizar o meu casamento gastando apenas <strong>R$ 5.786,82</strong>, mesmo com 120 convidados!</p>
+      <p>E foi aí que tudo mudou. Amigas, familiares e outras noivas começaram a me procurar para entender como eu tinha conseguido economizar tanto sem abrir mão de um casamento bonito. Ao longo desse tempo, ajudei mais de 150 noivas a transformarem um momento cheio de decisões em um processo muito mais leve.</p>
+      <p>Foi acompanhando cada uma delas que percebi uma coisa: a maioria das noivas não gasta mais porque quer. Ela gasta mais porque está perdida ou mal assessorada. São dezenas de fornecedores, orçamentos, pagamentos, prazos e decisões acontecendo ao mesmo tempo.</p>
+      <p>Foi por isso que decidi reunir todo o meu processo e experiência em uma única ferramenta. Assim nasceu a Central da Noiva.</p>
+      <p>Hoje, em vez de organizar cada casamento individualmente, eu entrego o mesmo sistema que utilizo — porque acredito que nenhuma noiva deveria começar a vida de casada carregando dívidas que poderiam ter sido evitadas.</p>
+      <p>Espero, de coração, que ela ajude você tanto quanto já ajudou tantas outras noivas. ❤️</p>
+      <p class="sig">Ana Júlia</p>
+
+      <div class="cta-block" style="margin-top:20px">
+        <a class="btn" href="{{LINK_KIWIFY}}">QUERO COMEÇAR A ORGANIZAR MEU CASAMENTO</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><strong style="color:#fff;font-family:var(--font-display);font-size:1.2rem">Central da Noiva</strong></p>
+  <p>Suporte: <a href="mailto:suporte.centraldanoiva@gmail.com">suporte.centraldanoiva@gmail.com</a></p>
+</footer>
+
+<!-- Popup de prova social (conteúdo gerado pelo script.js) -->
+<div id="social-proof" class="social-proof" aria-live="polite" aria-atomic="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
