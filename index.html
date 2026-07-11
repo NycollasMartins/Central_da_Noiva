@@ -33,18 +33,30 @@
 <link rel="preload" href="fonts/jost.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 
-<!-- Meta Pixel Code -->
+<!-- Meta Pixel Code (carregamento adiado p/ desempenho — mesmo ID e PageView) -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[]}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1625121772510561');
 fbq('track', 'PageView');
+(function(){
+  var done=false;
+  function loadPixel(){
+    if(done)return; done=true;
+    var t=document.createElement('script'); t.async=!0;
+    t.src='https://connect.facebook.net/en_US/fbevents.js';
+    var s=document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t,s);
+  }
+  // carrega no 1º gesto do usuário OU em segundo plano (garante o PageView)
+  ['scroll','mousemove','touchstart','click','keydown'].forEach(function(ev){
+    window.addEventListener(ev, loadPixel, {once:true, passive:true});
+  });
+  if('requestIdleCallback' in window){ requestIdleCallback(loadPixel, {timeout:4000}); }
+  else { window.addEventListener('load', function(){ setTimeout(loadPixel, 2500); }); }
+})();
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1625121772510561&ev=PageView&noscript=1"
