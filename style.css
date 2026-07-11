@@ -12,6 +12,7 @@
   --wine:       #414A26;   /* cor principal / botões — verde oliva escuro */
   --wine-dark:  #2D3418;   /* hover dos botões — oliva profundo */
   --gold:       #B79A5B;   /* detalhes / preço — dourado champanhe */
+  --gold-ink:   #7A6526;   /* dourado escuro p/ TEXTO em fundo claro (acessibilidade) */
   --line:       #DEDCC8;   /* linhas finas */
   --success:    #566333;   /* selos de garantia */
 
@@ -45,9 +46,11 @@ h3{font-size:clamp(1.25rem,4.5vw,1.45rem)}
 p{margin:0 0 1.05em}
 .eyebrow{
   font-family:var(--font-ui); font-size:.72rem; font-weight:600;
-  letter-spacing:.28em; text-transform:uppercase; color:var(--gold);
+  letter-spacing:.28em; text-transform:uppercase; color:var(--gold-ink);
   margin:0 0 14px;
 }
+/* na seção escura (fundo oliva) mantém o dourado claro, que já tem bom contraste */
+.questions .eyebrow{color:var(--gold)}
 .center{text-align:center}
 .lead{font-size:1.12rem; color:var(--ink-soft)}
 strong{font-weight:600; color:var(--ink)}
