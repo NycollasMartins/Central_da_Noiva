@@ -170,3 +170,43 @@
     t = setTimeout(ajustar, 200);
   });
 })();
+
+
+/* ============================================================
+   PASSAGEM DE PARÂMETROS PARA O CHECKOUT (UTM, fbclid, gclid...)
+   Leva os parâmetros da URL atual para o checkout da Kiwify,
+   para o rastreamento (UTMify/Meta) funcionar do clique à venda.
+   ============================================================ */
+
+// Função global: redireciona mantendo os parâmetros atuais da URL
+function redirectWithParams(destination) {
+  var currentParams = window.location.search;
+  if (!currentParams) {
+    window.location.href = destination;
+    return;
+  }
+  if (destination.indexOf("?") !== -1) {
+    window.location.href = destination + "&" + currentParams.substring(1);
+  } else {
+    window.location.href = destination + currentParams;
+  }
+}
+window.redirectWithParams = redirectWithParams;
+
+// Aplica os parâmetros atuais em TODOS os links de checkout (cobre clique,
+// abrir em nova aba e copiar link — sem redirecionamento fora da função).
+(function () {
+  function aplicarParams() {
+    var search = window.location.search;
+    if (!search) return; // sem parâmetros na URL, nada a fazer
+    var extra = search.substring(1); // remove o "?"
+    var links = document.querySelectorAll('a[href*="pay.kiwify.com.br"]');
+    for (var i = 0; i < links.length; i++) {
+      var href = links[i].getAttribute('href');
+      if (!href || href.indexOf('utm_') !== -1) continue; // evita duplicar
+      links[i].setAttribute('href', href + (href.indexOf('?') !== -1 ? '&' : '?') + extra);
+    }
+  }
+  if (document.readyState !== 'loading') aplicarParams();
+  else document.addEventListener('DOMContentLoaded', aplicarParams);
+})();
